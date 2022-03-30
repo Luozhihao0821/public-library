@@ -1,8 +1,10 @@
 <template>
-    <div class="lm-message" :style="style[type]">
+  <transition class="down">
+    <div class="lm-message" :style="style[type]" v-if="visible">
       <i class="iconfont" :class="[style[type].icon]"></i>
       <span class="text">{{ text }}</span>
     </div>
+  </transition>
 </template>
 <script>
 import { onMounted, ref } from "vue";
@@ -54,6 +56,17 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+.down-enter-from {
+  transform: translate3d(0, -75px, 0);
+  opacity: 0;
+}
+.down-enter-active {
+  transition: all 1s;
+}
+.down-enter-to {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
 .lm-message {
   width: 300px;
   height: 50px;

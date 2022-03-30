@@ -1,10 +1,10 @@
 import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
-import Message from '../views/Message.vue'
+import Home from '../views/Home.vue'
 
 const routes = [
   {
     path: '/',
-    component: Message
+    component: Home
   }
 ]
 

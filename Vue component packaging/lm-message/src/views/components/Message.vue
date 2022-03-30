@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="lm-message">
     <h2>1.消息提示</h2>
     <div class="messageBtn">
       <button @click="getWarn">警告</button>
@@ -32,7 +32,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.home{
+.lm-message{
   width: 100%;
   padding: 10px;
   .messageBtn{
