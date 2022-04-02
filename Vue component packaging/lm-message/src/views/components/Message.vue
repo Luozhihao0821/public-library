@@ -1,6 +1,5 @@
 <template>
   <div class="lm-message">
-    <h2>1.消息提示</h2>
     <div class="messageBtn">
       <button @click="getWarn">警告</button>
       <button @click="getError">错误</button>

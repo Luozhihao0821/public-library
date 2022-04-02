@@ -1,6 +1,5 @@
 <template>
   <div class="lm-transition">
-    <h2>2.动画组件使用</h2>
     <button @click="flag = !flag">切换动画</button>
     <transition name="fade">
       <div v-if="flag" class="box"></div>
